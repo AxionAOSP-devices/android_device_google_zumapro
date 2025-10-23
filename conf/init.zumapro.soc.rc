@@ -167,7 +167,8 @@ on property:sys.boot_completed=1
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/restricted/cpus 0-3
     write /dev/cpuset/camera-daemon/cpus 0-7
-    setprop vendor.powerhal.init 1
+    setprop vendor.powerhal.init 0
+    restart vendor.power-hal-aidl
 
     # Set PMU freq limit parameters
     write /sys/devices/system/cpu/cpufreq/policy0/sched_pixel/spc_threshold 76
