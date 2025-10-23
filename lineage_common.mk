@@ -26,7 +26,6 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 include hardware/google/pixel/lineage_health/device.mk
 
 $(call soong_config_set,lineage_health,charging_control_supports_deadline,true)
-$(call soong_config_set,lineage_health,charging_control_supports_limit,true)
 $(call soong_config_set,lineage_health,charging_control_supports_toggle,false)
 
 # Linker config
